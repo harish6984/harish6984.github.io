@@ -18,62 +18,68 @@ const Skills = () => {
     {
       title: 'Cloud Platforms',
       icon: <Cloud size={24} />,
-      skills: ['AWS', 'Azure', 'Google Cloud', 'DigitalOcean'],
+      skills: ['AWS', 'Azure', 'EC2', 'RDS', 'S3', 'Lambda'],
       color: 'devops'
     },
     {
       title: 'Containerization',
       icon: <Container size={24} />,
-      skills: ['Docker', 'Kubernetes', 'Helm', 'Docker Swarm'],
+      skills: ['Docker', 'Kubernetes', 'Helm', 'Container Registry'],
       color: 'cloud'
     },
     {
       title: 'Infrastructure as Code',
       icon: <Server size={24} />,
-      skills: ['Terraform', 'Ansible', 'CloudFormation', 'Pulumi'],
+      skills: ['Terraform', 'Ansible', 'CloudFormation', 'ARM Templates'],
       color: 'devops'
     },
     {
-      title: 'CI/CD',
+      title: 'CI/CD & Automation',
       icon: <GitBranch size={24} />,
-      skills: ['Jenkins', 'GitHub Actions', 'GitLab CI', 'Azure DevOps'],
+      skills: ['Jenkins', 'GitHub Actions', 'Maven', 'Nexus', 'AWS CodePipeline'],
       color: 'cloud'
     },
     {
       title: 'Monitoring & Observability',
       icon: <BarChart3 size={24} />,
-      skills: ['Prometheus', 'Grafana', 'Loki', 'Jaeger'],
+      skills: ['Prometheus', 'Grafana', 'CloudWatch', 'New Relic'],
       color: 'devops'
     },
     {
-      title: 'Security',
+      title: 'Security & Access Management',
       icon: <Shield size={24} />,
-      skills: ['HashiCorp Vault', 'SOPS', 'RBAC', 'Network Policies'],
+      skills: ['AWS IAM', 'Security Groups', 'RBAC', 'Network Policies'],
       color: 'cloud'
     },
     {
-      title: 'Databases',
+      title: 'Databases & Storage',
       icon: <Database size={24} />,
-      skills: ['PostgreSQL', 'MongoDB', 'Redis', 'InfluxDB'],
+      skills: ['RDS', 'DynamoDB', 'ElastiCache', 'S3', 'EBS'],
       color: 'devops'
     },
     {
-      title: 'Automation',
+      title: 'Scripting & Automation',
       icon: <Zap size={24} />,
-      skills: ['Python', 'Bash', 'PowerShell', 'Go'],
+      skills: ['Python', 'Bash', 'PowerShell', 'Lambda Functions'],
       color: 'cloud'
     }
   ];
 
+  const certifications = [
+    { name: 'AWS Certified Solutions Architect - Associate', level: 100 },
+    { name: 'AWS Certified Cloud Practitioner', level: 100 },
+    { name: 'Microsoft Certified: Azure Fundamentals', level: 100 }
+  ];
+
   const tools = [
-    { name: 'Kubernetes', level: 95 },
-    { name: 'Docker', level: 98 },
-    { name: 'AWS', level: 90 },
-    { name: 'Terraform', level: 92 },
-    { name: 'Prometheus', level: 88 },
-    { name: 'Grafana', level: 85 },
+    { name: 'Kubernetes', level: 90 },
+    { name: 'Docker', level: 95 },
+    { name: 'AWS', level: 88 },
+    { name: 'Terraform', level: 85 },
+    { name: 'Prometheus', level: 82 },
     { name: 'Jenkins', level: 87 },
-    { name: 'Python', level: 83 }
+    { name: 'Python', level: 80 },
+    { name: 'Ansible', level: 78 }
   ];
 
   return (
@@ -110,6 +116,19 @@ const Skills = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Certifications */}
+        <div className="bg-card/30 rounded-2xl p-8 mb-16">
+          <h3 className="text-2xl font-semibold mb-8 text-center">Certifications</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            {certifications.map((cert, index) => (
+              <div key={cert.name} className="bg-card border border-border rounded-lg p-4 text-center">
+                <Shield className="w-12 h-12 text-devops-400 mx-auto mb-3" />
+                <h4 className="font-medium text-sm">{cert.name}</h4>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Proficiency Bars */}

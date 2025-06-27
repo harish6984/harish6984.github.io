@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center space-y-4">
           <div className="flex items-center space-x-6">
             <a 
-              href="https://github.com/harish"
+              href="https://github.com/harish-maddukuri"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-devops-400 transition-colors duration-200"
@@ -18,7 +18,7 @@ const Footer = () => {
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com/in/harish"
+              href="https://linkedin.com/in/harish-maddukuri-137681264"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-devops-400 transition-colors duration-200"
@@ -27,7 +27,7 @@ const Footer = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="mailto:harish@example.com"
+              href="mailto:maddukuriharishchowdary@gmail.com"
               className="text-muted-foreground hover:text-devops-400 transition-colors duration-200"
               aria-label="Email"
             >
@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="text-center">
             <p className="text-muted-foreground flex items-center gap-1">
               Built with <Heart size={16} className="text-red-500 fill-current" /> by 
-              <span className="gradient-text font-medium ml-1">Harish</span>
+              <span className="gradient-text font-medium ml-1">Harish Maddukuri</span>
             </p>
             <p className="text-sm text-muted-foreground mt-2">
               © {new Date().getFullYear()} All rights reserved.

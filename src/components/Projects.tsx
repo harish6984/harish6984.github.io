@@ -5,39 +5,48 @@ import { ExternalLink, Github, Server, Cloud, Container, BarChart3 } from 'lucid
 const Projects = () => {
   const projects = [
     {
-      title: 'Kubernetes Multi-Cluster Management',
-      description: 'Built a comprehensive multi-cluster Kubernetes management platform with automated deployments, monitoring, and disaster recovery across multiple cloud providers.',
-      tech: ['Kubernetes', 'ArgoCD', 'Prometheus', 'Grafana', 'Terraform'],
-      icon: <Container size={24} />,
-      github: 'https://github.com/harish/k8s-multi-cluster',
-      demo: 'https://k8s-demo.harish.dev',
-      color: 'devops'
-    },
-    {
-      title: 'Cloud-Native Observability Stack',
-      description: 'Designed and implemented a complete observability solution using Prometheus, Grafana, and Loki for monitoring distributed applications across AWS EKS.',
-      tech: ['Prometheus', 'Grafana', 'Loki', 'Jaeger', 'AWS EKS'],
-      icon: <BarChart3 size={24} />,
-      github: 'https://github.com/harish/observability-stack',
-      demo: 'https://monitoring.harish.dev',
+      title: 'AWS Lambda Data Processing Pipeline',
+      description: 'Developed scalable AWS Lambda functions in Python for large-scale data transformation and analytics on EMR clusters. Implemented automated data processing workflows with fault tolerance and auto-scaling capabilities.',
+      tech: ['AWS Lambda', 'Python', 'EMR', 'S3', 'CloudWatch'],
+      icon: <Cloud size={24} />,
+      github: 'https://github.com/harish-maddukuri',
+      demo: 'https://aws-pipeline.example.com',
       color: 'cloud'
     },
     {
-      title: 'Infrastructure as Code Pipeline',
-      description: 'Automated infrastructure provisioning pipeline using Terraform and GitHub Actions, supporting multiple environments with policy-as-code validation.',
-      tech: ['Terraform', 'GitHub Actions', 'AWS', 'OPA', 'Sentinel'],
-      icon: <Server size={24} />,
-      github: 'https://github.com/harish/iac-pipeline',
-      demo: 'https://infrastructure.harish.dev',
+      title: 'High-Availability Kubernetes Infrastructure',
+      description: 'Architected and deployed production-grade Kubernetes clusters with advanced networking, auto-scaling, and disaster recovery. Managed containerized workloads across private and public clouds using Helm for reproducible deployments.',
+      tech: ['Kubernetes', 'Docker', 'Helm', 'Terraform', 'Prometheus'],
+      icon: <Container size={24} />,
+      github: 'https://github.com/harish-maddukuri',
+      demo: 'https://k8s-cluster.example.com',
       color: 'devops'
     },
     {
-      title: 'Microservices Deployment Platform',
-      description: 'Created a self-service platform for deploying microservices with automated scaling, blue-green deployments, and integrated security scanning.',
-      tech: ['Docker', 'Kubernetes', 'Helm', 'Istio', 'Harbor'],
-      icon: <Cloud size={24} />,
-      github: 'https://github.com/harish/microservices-platform',
-      demo: 'https://platform.harish.dev',
+      title: 'Multi-Environment CI/CD Pipeline',
+      description: 'Built comprehensive CI/CD pipeline using Jenkins, Maven, and Nexus with automated testing, security scanning, and multi-stage deployments. Integrated with AWS services for seamless cloud deployment and monitoring.',
+      tech: ['Jenkins', 'Maven', 'Nexus', 'GitHub Actions', 'AWS'],
+      icon: <GitBranch size={24} />,
+      github: 'https://github.com/harish-maddukuri',
+      demo: 'https://cicd-pipeline.example.com',
+      color: 'cloud'
+    },
+    {
+      title: 'Comprehensive Monitoring Stack',
+      description: 'Implemented enterprise-grade monitoring and alerting system using Prometheus, Grafana, and CloudWatch. Set up automated incident response and troubleshooting workflows for Kubernetes nodes and applications.',
+      tech: ['Prometheus', 'Grafana', 'CloudWatch', 'New Relic', 'PagerDuty'],
+      icon: <BarChart3 size={24} />,
+      github: 'https://github.com/harish-maddukuri',
+      demo: 'https://monitoring.example.com',
+      color: 'devops'
+    },
+    {
+      title: 'Infrastructure Automation with Terraform',
+      description: 'Designed Infrastructure as Code solutions using Terraform for rapid deployment of cloud architectures. Automated provisioning of VPCs, security groups, and multi-tier applications with cost optimization strategies.',
+      tech: ['Terraform', 'AWS', 'Ansible', 'CloudFormation', 'Cost Optimization'],
+      icon: <Server size={24} />,
+      github: 'https://github.com/harish-maddukuri',
+      demo: 'https://infrastructure.example.com',
       color: 'cloud'
     }
   ];
@@ -48,7 +57,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A showcase of infrastructure solutions and automation projects I've built
+            A showcase of cloud infrastructure and automation solutions I've architected
           </p>
         </div>
 
@@ -106,7 +115,7 @@ const Projects = () => {
 
         <div className="text-center mt-12">
           <a 
-            href="https://github.com/harish"
+            href="https://github.com/harish-maddukuri"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-devops-600 hover:bg-devops-700 text-white rounded-lg font-medium transition-all duration-200 hover:scale-105"
