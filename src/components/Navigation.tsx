@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -50,7 +49,13 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold gradient-text">Harish</span>
+            <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-devops-400/50">
+              <img 
+                src="/lovable-uploads/0d34f9d2-3747-465f-906c-33dfed331a68.png" 
+                alt="Logo" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           {/* Desktop Navigation */}

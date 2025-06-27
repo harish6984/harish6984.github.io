@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { User, MapPin, Calendar } from 'lucide-react';
+import { MapPin, Calendar } from 'lucide-react';
 
 const About = () => {
   return (
@@ -16,8 +16,12 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-in">
             <div className="bg-gradient-to-br from-devops-500/20 to-cloud-500/20 rounded-2xl p-8 mb-8">
-              <div className="w-32 h-32 bg-gradient-to-br from-devops-400 to-cloud-400 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <User size={48} className="text-background" />
+              <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-4 border-gradient-to-br from-devops-400 to-cloud-400">
+                <img 
+                  src="/lovable-uploads/6dc6eed6-15d6-4629-ace5-86555e541dd8.png" 
+                  alt="Harish Maddukuri" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="text-center">
                 <h3 className="text-xl font-semibold mb-2">Harish Maddukuri</h3>
