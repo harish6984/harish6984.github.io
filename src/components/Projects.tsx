@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ExternalLink, Github, Server, Cloud, Container, BarChart3 } from 'lucide-react';
+import { ExternalLink, Github, Server, Cloud, Container, BarChart3, GitBranch } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
