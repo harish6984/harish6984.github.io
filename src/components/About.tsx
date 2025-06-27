@@ -18,7 +18,7 @@ const About = () => {
             <div className="bg-gradient-to-br from-devops-500/20 to-cloud-500/20 rounded-2xl p-8 mb-8">
               <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-4 border-gradient-to-br from-devops-400 to-cloud-400">
                 <img 
-                  src="/lovable-uploads/6dc6eed6-15d6-4629-ace5-86555e541dd8.png" 
+                  src="/lovable-uploads/1bb22776-1ada-429b-96a5-514fd755ec15.png" 
                   alt="Harish Maddukuri" 
                   className="w-full h-full object-cover"
                 />
