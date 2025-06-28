@@ -1,31 +1,24 @@
-
 import React from 'react';
-import { Mail, Github, Linkedin, MapPin, Send } from 'lucide-react';
+import { Mail, Linkedin, MapPin, Send, Twitter } from 'lucide-react';
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: <Mail size={20} />,
       label: 'Email',
-      value: 'harish@example.com',
-      href: 'mailto:harish@example.com'
-    },
-    {
-      icon: <Github size={20} />,
-      label: 'GitHub',
-      value: 'github.com/harish',
-      href: 'https://github.com/harish'
+      value: 'maddukuriharishchowdary@gmail.com',
+      href: 'mailto:maddukuriharishchowdary@gmail.com'
     },
     {
       icon: <Linkedin size={20} />,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/harish',
-      href: 'https://linkedin.com/in/harish'
+      value: 'linkedin.com/harish-maddukuri',
+      href: 'https://linkedin.com/in/harish-maddukuri-137681264'
     },
     {
       icon: <MapPin size={20} />,
       label: 'Location',
-      value: 'United States',
+      value: 'Rome, Italy',
       href: null
     }
   ];
@@ -79,16 +72,7 @@ const Contact = () => {
               </p>
               <div className="flex gap-4">
                 <a 
-                  href="https://github.com/harish"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-lg bg-accent hover:bg-muted transition-colors duration-200"
-                  aria-label="GitHub"
-                >
-                  <Github size={20} />
-                </a>
-                <a 
-                  href="https://linkedin.com/in/harish"
+                  href="https://linkedin.com/in/harish-maddukuri-137681264"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-lg bg-accent hover:bg-muted transition-colors duration-200"
@@ -97,7 +81,16 @@ const Contact = () => {
                   <Linkedin size={20} />
                 </a>
                 <a 
-                  href="mailto:harish@example.com"
+                  href="https://x.com/rishi6984"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-lg bg-accent hover:bg-muted transition-colors duration-200"
+                  aria-label="X (Twitter)"
+                >
+                  <Twitter size={20} />
+                </a>
+                <a 
+                  href="mailto:maddukuriharishchowdary@gmail.com"
                   className="p-3 rounded-lg bg-accent hover:bg-muted transition-colors duration-200"
                   aria-label="Email"
                 >

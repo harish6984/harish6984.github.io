@@ -1,4 +1,3 @@
-
 # Harish - DevOps & Cloud Engineer Portfolio
 
 A modern, responsive portfolio website showcasing DevOps and Cloud Engineering expertise.
@@ -198,9 +197,8 @@ npm run lint         # Run ESLint
 ## 📧 Contact & Support
 
 For questions or support, please reach out:
-- **Email**: harish@example.com
-- **GitHub**: [github.com/harish](https://github.com/harish)
-- **LinkedIn**: [linkedin.com/in/harish](https://linkedin.com/in/harish)
+- **Email**: maddukuriharishchowdary@gmail.com
+- **LinkedIn**: [linkedin.com/in/harish-maddukuri-137681264](https://linkedin.com/in/harish-maddukuri-137681264)
 
 ## 📄 License
 

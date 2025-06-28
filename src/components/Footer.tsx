@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Heart, Github, Linkedin, Mail } from 'lucide-react';
+import { Heart, Linkedin, Mail, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,15 +8,6 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center space-y-4">
           <div className="flex items-center space-x-6">
             <a 
-              href="https://github.com/harish-maddukuri"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-devops-400 transition-colors duration-200"
-              aria-label="GitHub"
-            >
-              <Github size={20} />
-            </a>
-            <a 
               href="https://linkedin.com/in/harish-maddukuri-137681264"
               target="_blank"
               rel="noopener noreferrer"
@@ -25,6 +15,15 @@ const Footer = () => {
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
+            </a>
+            <a 
+              href="https://x.com/rishi6984"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-devops-400 transition-colors duration-200"
+              aria-label="X (Twitter)"
+            >
+              <Twitter size={20} />
             </a>
             <a 
               href="mailto:maddukuriharishchowdary@gmail.com"

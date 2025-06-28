@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   Cloud, 
@@ -66,20 +65,33 @@ const Skills = () => {
   ];
 
   const certifications = [
-    { name: 'AWS Certified Solutions Architect - Associate', level: 100 },
-    { name: 'AWS Certified Cloud Practitioner', level: 100 },
-    { name: 'Microsoft Certified: Azure Fundamentals', level: 100 }
+    { 
+      name: 'AWS Certified Solutions Architect - Associate',
+      image: '/lovable-uploads/solutions-architect.png'
+    },
+    { 
+      name: 'AWS Certified Cloud Practitioner',
+      image: '/lovable-uploads/cloud-practitioner.png'
+    },
+    { 
+      name: 'Microsoft Certified: Azure Fundamentals',
+      image: '/lovable-uploads/azure-fundamentals.png'
+    },
+    { 
+      name: 'HashiCorp Certified: Terraform Associate',
+      image: '/lovable-uploads/terraform.png'
+    }
   ];
 
   const tools = [
-    { name: 'Kubernetes', level: 90 },
-    { name: 'Docker', level: 95 },
-    { name: 'AWS', level: 88 },
-    { name: 'Terraform', level: 85 },
-    { name: 'Prometheus', level: 82 },
-    { name: 'Jenkins', level: 87 },
-    { name: 'Python', level: 80 },
-    { name: 'Ansible', level: 78 }
+    { name: 'Kubernetes' },
+    { name: 'Docker' },
+    { name: 'AWS' },
+    { name: 'Terraform' },
+    { name: 'Prometheus' },
+    { name: 'Jenkins' },
+    { name: 'Python' },
+    { name: 'Ansible' }
   ];
 
   return (
@@ -119,13 +131,34 @@ const Skills = () => {
         </div>
 
         {/* Certifications */}
-        <div className="bg-card/30 rounded-2xl p-8 mb-16">
+        <div className="bg-card/30 rounded-2xl p-8 mt-12">
           <h3 className="text-2xl font-semibold mb-8 text-center">Certifications</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {certifications.map((cert, index) => (
-              <div key={cert.name} className="bg-card border border-border rounded-lg p-4 text-center">
-                <Shield className="w-12 h-12 text-devops-400 mx-auto mb-3" />
-                <h4 className="font-medium text-sm">{cert.name}</h4>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {certifications.map((cert) => (
+              <div
+                key={cert.name}
+                className="relative group transition-all duration-300"
+              >
+                {/* Glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/40 via-blue-600/30 to-cyan-500/30 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300 opacity-60 group-hover:opacity-80"></div>
+                
+                {/* Glass card */}
+                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-background/95 via-background/85 to-background/75 backdrop-blur-xl border border-white/10 p-6 h-[200px] flex flex-col items-center justify-center group-hover:border-white/20 transition-all duration-300">
+                  {/* Shine effect */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/0 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                  
+                  {/* Content */}
+                  <div className="relative flex flex-col items-center gap-4">
+                    <div className="w-24 h-24 flex items-center justify-center">
+                      <img 
+                        src={cert.image} 
+                        alt={cert.name}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <p className="text-center text-sm font-medium bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent line-clamp-2">{cert.name}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -134,18 +167,24 @@ const Skills = () => {
         {/* Proficiency Bars */}
         <div className="bg-card/30 rounded-2xl p-8">
           <h3 className="text-2xl font-semibold mb-8 text-center">Core Proficiencies</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {tools.map((tool, index) => (
-              <div key={tool.name} className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="font-medium">{tool.name}</span>
-                  <span className="text-sm text-muted-foreground">{tool.level}%</span>
-                </div>
-                <div className="w-full bg-muted rounded-full h-2">
-                  <div 
-                    className="bg-gradient-to-r from-devops-500 to-cloud-500 h-2 rounded-full transition-all duration-1000 ease-out"
-                    style={{ width: `${tool.level}%` }}
-                  ></div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {tools.map((tool) => (
+              <div
+                key={tool.name}
+                className="relative group transition-all duration-300"
+              >
+                {/* Glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-emerald-500/30 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300 opacity-50 group-hover:opacity-70"></div>
+                
+                {/* Glass card */}
+                <div className="relative overflow-hidden rounded-2xl backdrop-blur-md border border-white/10 group-hover:border-white/20 transition-all duration-300">
+                  <div className="absolute inset-0 bg-white/5"></div>
+                  <div className="relative p-4">
+                    <span className="font-medium bg-gradient-to-r from-blue-400 to-emerald-400 text-transparent bg-clip-text">{tool.name}</span>
+                  </div>
+                  
+                  {/* Shine effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                 </div>
               </div>
             ))}
